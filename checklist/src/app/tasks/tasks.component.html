@@ -1,0 +1,22 @@
+<h1>To Do List</h1>
+<div class="input-div">
+    Enter new task: <input #newTask ><button (click)="AddTask(newTask.value)">Add Task</button>
+</div>
+<div>
+    <table class="completed-table">
+        <tr>
+            <th>Completed</th>
+        </tr>
+        <tr *ngFor="let task of completedTasks">
+            <td>{{task.description}} - {{task.completed}}</td>
+        </tr>
+    </table>
+    <table class="pending-table">
+        <tr>
+            <th>Pending</th>
+        </tr>
+        <tr *ngFor="let task of pendingTasks">
+            <td>{{task.description}} - {{task.completed}}</td>
+        </tr>
+    </table>
+</div>
