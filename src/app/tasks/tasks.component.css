@@ -12,3 +12,10 @@ table{
 h1{
     text-align: center;
 }
+.input-div{
+    text-align: center;
+    padding: 1em;
+}
+input{
+    width: 50%;
+}

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TaskService } from '../task.service';
-import { Tasks } from './tasks';
+import { UserTask } from './usertask';
 
 @Component({
   selector: 'app-tasks',
@@ -11,9 +11,10 @@ export class TasksComponent implements OnInit {
 
   constructor(private service:TaskService) { }
 
-  Checklist:Tasks[] = [];// = [{description : 'test', completed : true}];
-  completedTasks:Tasks[] = [];
-  pendingTasks:Tasks[] = [];
+  Checklist:UserTask[] = [];// = [{description : 'test', completed : true}];
+  completedTasks:UserTask[];
+  pendingTasks:UserTask[];
+  newTask:UserTask = new UserTask;
 
   ngOnInit(): void {
     this.getChecklist();
@@ -31,7 +32,16 @@ export class TasksComponent implements OnInit {
   }
 
   groupTasks(){
+    this.completedTasks = [];
+    this.pendingTasks = [];
     this.Checklist.forEach(task => { task.completed ? this.completedTasks.push(task) : this.pendingTasks.push(task) });
+  }
+
+  AddTask(newTask: any){
+    this.newTask = {description: newTask, completed:false};
+    this.service.addTask(this.newTask).subscribe(response => {
+      this.getChecklist();
+    });
   }
 
 }
