@@ -8,13 +8,14 @@ namespace ChecklistAPI.Repository
 {
     public class UserTaskRepository : IUserTaskRepository
     {
-        private List<UserTask> checklist = new()
-        {
-            new UserTask { Description = "one", Completed = true },
-            new UserTask { Description = "two", Completed = true },
-            new UserTask { Description = "three", Completed = false },
-            new UserTask { Description = "four", Completed = false }
-        };
+        private List<UserTask> checklist = new List<UserTask>();
+        //{
+        //    new UserTask { Description = "one", Completed = true },
+        //    new UserTask { Description = "two", Completed = true },
+        //    new UserTask { Description = "three", Completed = false },
+        //    new UserTask { Description = "four", Completed = false },
+        //    new UserTask { Description = "five", Completed = false }
+        //};
 
         public List<UserTask> GetChecklist()
         {

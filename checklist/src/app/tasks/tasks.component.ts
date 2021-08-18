@@ -21,14 +21,12 @@ export class TasksComponent implements OnInit {
   }
   
   getChecklist(){
-    
     this.service.getTasks().subscribe(
       data =>{
         this.Checklist = data;
         this.groupTasks();
       }
     )
-    
   }
 
   groupTasks(){

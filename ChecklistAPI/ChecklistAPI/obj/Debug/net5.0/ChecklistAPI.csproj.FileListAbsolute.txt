@@ -11,7 +11,6 @@ C:\Users\rizwa\Angular apps\Novafori\ChecklistAPI\ChecklistAPI\bin\Debug\net5.0\
 C:\Users\rizwa\Angular apps\Novafori\ChecklistAPI\ChecklistAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\rizwa\Angular apps\Novafori\ChecklistAPI\ChecklistAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\rizwa\Angular apps\Novafori\ChecklistAPI\ChecklistAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\rizwa\Angular apps\Novafori\ChecklistAPI\ChecklistAPI\obj\Debug\net5.0\ChecklistAPI.csproj.AssemblyReference.cache
 C:\Users\rizwa\Angular apps\Novafori\ChecklistAPI\ChecklistAPI\obj\Debug\net5.0\ChecklistAPI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\rizwa\Angular apps\Novafori\ChecklistAPI\ChecklistAPI\obj\Debug\net5.0\ChecklistAPI.AssemblyInfoInputs.cache
 C:\Users\rizwa\Angular apps\Novafori\ChecklistAPI\ChecklistAPI\obj\Debug\net5.0\ChecklistAPI.AssemblyInfo.cs
